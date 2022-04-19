@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32407.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emptyExample", "emptyExample.vcxproj", "{5EBE8B8C-754E-481D-9A28-84801A4A5388}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openFrameworksGDB", "..\openFrameworksGDB\openFrameworksGDB.vcxproj", "{FDCAD8B9-E5A7-4B64-8817-8537006F9E82}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openFrameworksGDB", "..\..\..\addons\ofxVisualGDBCrossCompile\openFrameworksGDB\openFrameworksGDB.vcxproj", "{FDCAD8B9-E5A7-4B64-8817-8537006F9E82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
