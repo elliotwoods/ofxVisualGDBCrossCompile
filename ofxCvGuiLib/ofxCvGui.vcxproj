@@ -23,11 +23,11 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
-    <Import Project="..\openFrameworksGDB\openFrameworks_includes.props" />
+    <Import Project="..\openFrameworksGDB\openFrameworks_GDB.props" />
     <Import Project="ofxCvGuiGDB.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
-    <Import Project="..\openFrameworksGDB\openFrameworks_includes.props" />
+    <Import Project="..\openFrameworksGDB\openFrameworks_GDB.props" />
     <Import Project="ofxCvGuiGDB.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
@@ -47,7 +47,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
       <CPPLanguageStandard>CPP1Z</CPPLanguageStandard>
-      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG=1;TARGET_NO_SOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets;..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui\src\ofxCvGui\;..\..\..\addons\ofxCvGui\src;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderName>ofxCvGui_pch.h</PrecompiledHeaderName>
@@ -170,10 +170,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="ofxCvGui_pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="ofxCvGui_pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets.h" />

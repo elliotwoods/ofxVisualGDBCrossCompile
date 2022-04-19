@@ -12,6 +12,11 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworks;$(OF_ROOT)\libs\openFrameworks\graphics;$(OF_ROOT)\libs\openFrameworks\app;$(OF_ROOT)\libs\openFrameworks\sound;$(OF_ROOT)\libs\openFrameworks\utils;$(OF_ROOT)\libs\openFrameworks\communication;$(OF_ROOT)\libs\openFrameworks\video;$(OF_ROOT)\libs\openFrameworks\types;$(OF_ROOT)\libs\openFrameworks\math;$(OF_ROOT)\libs\openFrameworks\3d;$(OF_ROOT)\libs\openFrameworks\gl;$(OF_ROOT)\libs\openFrameworks\events;$(OF_ROOT)\libs\glm\include;$(OF_ROOT)\libs\rtAudio\include;$(OF_ROOT)\libs\quicktime\include;$(OF_ROOT)\libs\freetype\include;$(OF_ROOT)\libs\freetype\include\freetype2;$(OF_ROOT)\libs\freeImage\include;$(OF_ROOT)\libs\fmod\include;$(OF_ROOT)\libs\videoInput\include;$(OF_ROOT)\libs\glew\include\;$(OF_ROOT)\libs\glu\include;$(OF_ROOT)\libs\tess2\include;$(OF_ROOT)\libs\cairo\include\cairo;$(OF_ROOT)\libs\glfw\include;$(OF_ROOT)\libs\openssl\include;$(OF_ROOT)\libs\utf8\include;$(OF_ROOT)\libs\boost\include;$(OF_ROOT)\libs\json\include;$(OF_ROOT)\libs\curl\include;$(OF_ROOT)\libs\uriparser\include;$(OF_ROOT)\libs\pugixml\include;$(OF_ROOT)\libs\kiss\include;$(OF_ROOT)\addons;=/usr/include/cairo;=/usr/include/glib-2.0;=/usr/include/gstreamer-1.0;=/usr/lib/arm-linux-gnueabihf/glib-2.0/include;=/usr/include/freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>../../../libs/tess2/lib/linuxarmv6l;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>fontconfig;uriparser;curl;glfw;pthread;boost_filesystem;dl;X11;glfw;freeimage;freetype;GL;gstreamer-1.0;glib-2.0;gobject-2.0;tess2;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+    </Link>
   </ItemDefinitionGroup>
 
 </Project>

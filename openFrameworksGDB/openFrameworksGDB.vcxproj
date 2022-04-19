@@ -23,10 +23,10 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
-    <Import Project="openFrameworks_includes.props" />
+    <Import Project="openFrameworks_GDB.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
-    <Import Project="openFrameworks_includes.props" />
+    <Import Project="openFrameworks_GDB.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
