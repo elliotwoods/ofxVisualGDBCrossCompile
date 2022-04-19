@@ -6,6 +6,8 @@
       <Exec>false</Exec>
       <Fork>false</Fork>
       <Vfork>false</Vfork>
+      <Syscalls />
+      <CXXCatchpoints />
     </CatchpointConfiguration>
     <MaskInterruptsWhileStepping>false</MaskInterruptsWhileStepping>
     <MemoryWindowPreferences />

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{2F9CE59C-25BB-4E13-A474-684C389E8757}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Import Project="..\openFrameworksGDB\openFrameworks_includes.props" />
+    <Import Project="ofxCvGuiGDB.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <Import Project="..\openFrameworksGDB\openFrameworks_includes.props" />
+    <Import Project="ofxCvGuiGDB.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>8.3.0/8.2.1/r4</ToolchainVersion>
+    <GNUTargetType>StaticLibrary</GNUTargetType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>8.3.0/8.2.1/r4</ToolchainVersion>
+    <GNUTargetType>StaticLibrary</GNUTargetType>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>CPP1Z</CPPLanguageStandard>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets;..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui\src\ofxCvGui\;..\..\..\addons\ofxCvGui\src;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderName>ofxCvGui_pch.h</PrecompiledHeaderName>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>CPP1Z</CPPLanguageStandard>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets;..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui\src\ofxCvGui\;..\..\..\addons\ofxCvGui\src;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderName>ofxCvGui_pch.h</PrecompiledHeaderName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ofxCvGui-Debug.vgdbsettings" />
+    <None Include="ofxCvGui-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets\BaseAsset.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets\Font.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets\Image.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets\Register.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets\Set.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets\Shader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets\Sound.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Builder.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Controller.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Element.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementGroup.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementSlot.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\InspectController.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Base.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\BaseImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Draws.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementCanvas.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementHost.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Base.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Grid.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Strip.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Image.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Inspector.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Instructions.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Pixels.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\PixelsVector.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Scroll.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\SharedView.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Text.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Texture.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Tree.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Widgets.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\World.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\WorldManaged.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Types.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Button.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Constants.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Debugger.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Enum.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\InspectParameterGroup.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\TextField.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Utils.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Button.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\EditableValue.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Heartbeat.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\HorizontalStack.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Indicator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\LiveValue.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\MultipleChoice.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SelectFile.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Slider.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Spacer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SubMenu.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\TextField.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Title.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Toggle.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ofxCvGui_pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\BaseAsset.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\Font.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\Image.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\Register.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\Set.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\Shader.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\Sound.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets\Watchdog.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Builder.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Controller.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Element.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementGroup.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementSlot.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\InspectController.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Base.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\BaseImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Draws.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementCanvas.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementHost.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Base.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Grid.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Strip.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Image.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Inspector.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Instructions.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Pixels.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\PixelsVector.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Scroll.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\SharedView.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Text.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Texture.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Tree.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Widgets.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\World.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\WorldManaged.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Types.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Button.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Constants.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Debugger.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Enum.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\InspectParameterGroup.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Sugar.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\TextField.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Utils.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Button.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\EditableValue.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Heartbeat.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\HorizontalStack.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Indicator.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\LiveValue.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\MultipleChoice.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SelectFile.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Slider.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Spacer.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SubMenu.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\TextField.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Title.h" />
+    <ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Toggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.h" />
+    <ClInclude Include="..\..\..\addons\ofxLiquidEvent\src\ofxLiquidEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Singleton.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\UnmanagedSingleton.h" />
+    <ClInclude Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.h" />
+    <ClInclude Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputFieldFontRenderer.h" />
+    <ClInclude Include="ofxCvGui_pch.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

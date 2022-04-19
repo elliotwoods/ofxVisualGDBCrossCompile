@@ -61,6 +61,7 @@
     <ClCompile Include="..\..\..\libs\openFrameworks\math\ofVec2f.cpp" />
     <ClCompile Include="..\..\..\libs\openFrameworks\math\ofVec4f.cpp" />
     <ClCompile Include="..\..\..\libs\openFrameworks\sound\ofFmodSoundPlayer.cpp" />
+    <ClCompile Include="..\..\..\libs\openFrameworks\sound\ofSoundBuffer.cpp" />
     <ClCompile Include="..\..\..\libs\openFrameworks\types\ofBaseTypes.cpp" />
     <ClCompile Include="..\..\..\libs\openFrameworks\types\ofColor.cpp" />
     <ClCompile Include="..\..\..\libs\openFrameworks\types\ofParameter.cpp" />
@@ -137,6 +138,7 @@
     <ClInclude Include="..\..\..\libs\openFrameworks\math\ofVectorMath.h" />
     <ClInclude Include="..\..\..\libs\openFrameworks\ofMain.h" />
     <ClInclude Include="..\..\..\libs\openFrameworks\sound\ofFmodSoundPlayer.h" />
+    <ClInclude Include="..\..\..\libs\openFrameworks\sound\ofSoundBuffer.h" />
     <ClInclude Include="..\..\..\libs\openFrameworks\types\ofColor.h" />
     <ClInclude Include="..\..\..\libs\openFrameworks\types\ofParameter.h" />
     <ClInclude Include="..\..\..\libs\openFrameworks\types\ofParameterGroup.h" />
