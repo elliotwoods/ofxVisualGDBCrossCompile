@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32407.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emptyExample", "emptyExample.vcxproj", "{5EBE8B8C-754E-481D-9A28-84801A4A5388}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openFrameworksGDB", "..\openFrameworksGDB\openFrameworksGDB.vcxproj", "{FDCAD8B9-E5A7-4B64-8817-8537006F9E82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EBE8B8C-754E-481D-9A28-84801A4A5388}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{5EBE8B8C-754E-481D-9A28-84801A4A5388}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{5EBE8B8C-754E-481D-9A28-84801A4A5388}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{5EBE8B8C-754E-481D-9A28-84801A4A5388}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{FDCAD8B9-E5A7-4B64-8817-8537006F9E82}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{FDCAD8B9-E5A7-4B64-8817-8537006F9E82}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{FDCAD8B9-E5A7-4B64-8817-8537006F9E82}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{FDCAD8B9-E5A7-4B64-8817-8537006F9E82}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EC31F0D-4218-475A-96FB-3D714E11EF77}
+	EndGlobalSection
+EndGlobal
