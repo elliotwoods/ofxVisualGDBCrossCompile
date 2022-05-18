@@ -259,6 +259,9 @@
       <Filter>addons\ofxTextInputField\src</Filter>
     </ClCompile>
     <ClCompile Include="ofxCvGui_pch.cpp" />
+    <ClCompile Include="..\..\ofxCvGui\src\ofxCvGui\Widgets\VerticalStack.cpp">
+      <Filter>src\ofxCvGui\Widgets</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets.h">
@@ -469,5 +472,8 @@
       <Filter>addons\ofxTextInputField\src</Filter>
     </ClInclude>
     <ClInclude Include="ofxCvGui_pch.h" />
+    <ClInclude Include="..\..\ofxCvGui\src\ofxCvGui\Widgets\VerticalStack.h">
+      <Filter>src\ofxCvGui\Widgets</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
